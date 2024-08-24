@@ -1,0 +1,53 @@
+<div class="nes-container  with-title is-rounded">
+  <p class="title nes-text">Question {{ no }} of {{ totalQuestion }}</p>
+
+  <div class="flex">
+      <i [className]="selectedIconStyle" class="flex-none" ></i>
+      <p class="nes-balloon from-left -pointer flex-1 w-25" style="opacity: 80%;">
+        {{ question?.question }}
+      </p>
+  </div>
+
+  @for (item of question?.options; track $index) {
+    @if ($index === 0) {
+      <div class="py-2">
+        <label class="nes-btn is-primary w-full" (click)="chooseAnswer(item)">
+          <input type="radio" class="nes-radio" name="answer" checked />
+          <span>{{ item }}</span>
+        </label>
+      </div>
+    }
+    @if ($index === 1) {
+      <div class="py-2">
+        <label class="nes-btn is-success w-full" (click)="chooseAnswer(item)">
+          <input type="radio" class="nes-radio" name="answer" checked />
+          <span>{{ item }}</span>
+        </label>
+      </div>
+    }
+    @if ($index === 2) {
+      <div class="py-2">
+        <label class="nes-btn is-warning w-full" (click)="chooseAnswer(item)">
+          <input type="radio" class="nes-radio" name="answer" checked />
+          <span>{{ item }}</span>
+        </label>
+      </div>
+    }
+    @if ($index === 3) {
+      <div class="py-2">
+        <label class="nes-btn is-error w-full" (click)="chooseAnswer(item)">
+          <input type="radio" class="nes-radio" name="answer" checked />
+          <span>{{ item }}</span>
+        </label>
+      </div>
+    }
+  }
+
+  <div class="flex justify-end">
+    @if (answer!=="") {
+      <button type="button" class="nes-btn" (click)="confirmAnswer()">Confirm</button>
+    } @else {
+      <button type="button" class="nes-btn is-disabled">Confirm</button>
+    }
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div>
+  <div class="nes-container with-title is-centered">
+    <p class="title">Finished</p>
+    <p class="text-center">You are <strong>{{ judgeTitle }}</strong></p>
+    <section class="icon-list flex justify-center pt-4 pb-6">
+      @for (i of heartCount; track $index) {
+        <i class="nes-icon star"></i>
+      }
+      @if (hasHalfHeart) {
+        <i class="nes-icon star is-half"></i>
+      }
+      @for (i of emptyHeartCount; track $index) {
+        <i class="nes-icon star is-empty"></i>
+      }
+    </section>
+    <p class="nes-text is-primary"><i>{{ judgeText }}</i></p>
+  </div>
+</div>
+
