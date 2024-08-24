@@ -16,16 +16,19 @@ export class JudgingBoxComponent {
   @Input()
   totalQuestion: number;
 
+  @Input()
+  localize: string;
+
 
   judgeTitle: string | undefined;
   judgeText: string | undefined;
-  localize: string = 'eng';
 
   hasHalfHeart: boolean = false;
   emptyHeartCount: number [] = [];
   heartCount: number [] = [];
 
   constructor() {
+    this.localize = 'en';
     this.totalQuestion = 0;
     this.score = 0;
     this.judgeTitle = "";

@@ -46,7 +46,7 @@
     }
 
     @if (pageNumber > totalQuestion) {
-      <app-judging-box [score]="score" [totalQuestion]="totalQuestion"/>
+      <app-judging-box [localize]="lang" [score]="score" [totalQuestion]="totalQuestion"/>
     }
   </div>
 
