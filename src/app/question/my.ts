@@ -22,16 +22,6 @@ export const myQuiz: Question[] = [
     answer: "Tunku Abdul Rahman"
   },
   {
-    question: "Apakah bunga kebangsaan Malaysia?",
-    options: [
-      "Bunga Raya",
-      "Rafflesia",
-      "Orkid",
-      "Bougainvillea"
-    ],
-    answer: "Bunga Raya"
-  },
-  {
     question: "Apakah lagu kebangsaan Malaysia?",
     options: [
       "Negaraku",
@@ -50,26 +40,6 @@ export const myQuiz: Question[] = [
       "Melaka"
     ],
     answer: "Melaka"
-  },
-  {
-    question: "Apa yang diwakili oleh bulan sabit pada bendera Malaysia?",
-    options: [
-      "Perpaduan",
-      "Islam",
-      "Kebebasan",
-      "Keadilan"
-    ],
-    answer: "Islam"
-  },
-  {
-    question: "Pada tahun berapa Malaysia menyambut Jubli Emas kemerdekaan?",
-    options: [
-      "2007",
-      "2000",
-      "2013",
-      "2017"
-    ],
-    answer: "2007"
   },
   {
     question: "Apakah nama deklarasi yang membawa kepada pembentukan Malaysia?",
@@ -131,24 +101,4 @@ export const myQuiz: Question[] = [
     ],
     answer: "Bangunan Sultan Abdul Samad"
   },
-  {
-    question: "Berapa bilangan jalur pada bendera Malaysia?",
-    options: [
-      "14",
-      "13",
-      "12",
-      "15"
-    ],
-    answer: "14"
-  },
-  {
-    question: "Yang manakah berikut bukan cuti umum semasa sambutan Merdeka?",
-    options: [
-      "Hari Kebangsaan",
-      "Hari Malaysia",
-      "Hari Buruh",
-      "Hari Raya"
-    ],
-    answer: "Hari Buruh"
-  }
 ];

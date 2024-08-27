@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-judging-box',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './judging-box.component.html',
   styleUrl: './judging-box.component.scss'
 })

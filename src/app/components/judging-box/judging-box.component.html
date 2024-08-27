@@ -1,7 +1,7 @@
 <div>
   <div class="nes-container with-title is-centered">
-    <p class="title">Finished</p>
-    <p class="text-center">You are <strong>{{ judgeTitle }}</strong></p>
+    <p class="title">{{ 'finish' | translate }}</p>
+    <p class="text-center">{{ 'youAre' | translate }}<strong>{{ judgeTitle }}</strong></p>
     <section class="icon-list flex justify-center pt-4 pb-6">
       @for (i of heartCount; track $index) {
         <i class="nes-icon star"></i>
