@@ -23,16 +23,6 @@ export const enQuiz: Question [] =
         answer: "Tunku Abdul Rahman"
       },
       {
-        question: "What is the national flower of Malaysia?",
-        options: [
-          "Hibiscus",
-          "Rafflesia",
-          "Orchid",
-          "Bougainvillea"
-        ],
-        answer: "Hibiscus"
-      },
-      {
         question: "Which of the following is Malaysia's national anthem?",
         options: [
           "Negaraku",
@@ -51,26 +41,6 @@ export const enQuiz: Question [] =
           "Malacca"
         ],
         answer: "Malacca"
-      },
-      {
-        question: "What does the crescent on the Malaysian flag represent?",
-        options: [
-          "Unity",
-          "Islam",
-          "Freedom",
-          "Justice"
-        ],
-        answer: "Islam"
-      },
-      {
-        question: "Which year did Malaysia celebrate its Golden Jubilee of independence?",
-        options: [
-          "2007",
-          "2000",
-          "2013",
-          "2017"
-        ],
-        answer: "2007"
       },
       {
         question: "What is the name of the declaration that led to the formation of Malaysia?",
@@ -132,24 +102,4 @@ export const enQuiz: Question [] =
         ],
         answer: "Sultan Abdul Samad Building"
       },
-      {
-        question: "How many stripes are there on the Malaysian flag?",
-        options: [
-          "14",
-          "13",
-          "12",
-          "15"
-        ],
-        answer: "14"
-      },
-      {
-        question: "Which of the following is not a public holiday during Merdeka celebrations?",
-        options: [
-          "National Day",
-          "Malaysia Day",
-          "Labour Day",
-          "Hari Raya"
-        ],
-        answer: "Labour Day"
-      }
     ];
