@@ -1,13 +1,11 @@
 <main class="pt-40">
   <nav class="bg-blue-600 p-4 fixed top-0 left-0 right-0 z-50 drop-shadow-lg">
     <div class="container mx-auto flex justify-between items-center">
-        <!-- Home Link -->
         <span class="text-white text-xl font-bold" (click)="restartProgress()">
           <i class="snes-jp-logo"></i>
           MyQuiz
         </span>
 
-        <!-- Buttons (Desktop View) -->
         <div class="hidden space-x-4 lg:flex">
             <span class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-100">
               <span class="text-2xl">{{ score }} </span>
@@ -19,7 +17,6 @@
             </span>
         </div>
 
-        <!-- Buttons (Mobile View) -->
         <div class="flex space-x-4 lg:hidden">
             <span class="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-100">
               <span class="text-2xl">{{ score }} </span>

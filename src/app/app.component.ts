@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LanguageBoxComponent } from "./language-box/language-box.component";
+import { LanguageBoxComponent } from "./components/language-box/language-box.component";
 import { QuestionBoxComponent } from "./question-box/question-box.component";
 import { Question } from './model/Question';
 import { myQuiz } from './question/my';
-import { JudgingBoxComponent } from "./judging-box/judging-box.component";
+import { JudgingBoxComponent } from "./components/judging-box/judging-box.component";
 import { enQuiz } from './question/en';
 
 @Component({
