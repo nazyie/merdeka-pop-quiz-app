@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LanguageBoxComponent } from "./components/language-box/language-box.component";
-import { QuestionBoxComponent } from "./question-box/question-box.component";
 import { Question } from './model/Question';
 import { myQuiz } from './question/my';
 import { JudgingBoxComponent } from "./components/judging-box/judging-box.component";
@@ -10,6 +9,9 @@ import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-transla
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
 import { AppModule } from './app.module';
+import { QuestionBoxComponent } from './components/question-box/question-box.component';
+import { FooterComponent } from "./components/footer/footer.component";
+import { HeaderComponent } from "./components/header/header.component";
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -18,7 +20,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LanguageBoxComponent, QuestionBoxComponent, JudgingBoxComponent, TranslateModule, AppModule],
+  imports: [RouterOutlet, LanguageBoxComponent, QuestionBoxComponent, JudgingBoxComponent, TranslateModule, AppModule, FooterComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

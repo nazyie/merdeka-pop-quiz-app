@@ -1,19 +1,28 @@
-<div class="nes-container  with-title is-centered is-rounded">
+<div class="nes-container with-title is-centered is-rounded">
   <p class="title nes-text">Merdeka Pop Quiz !</p>
 
   <div class="flex">
-      <i class="nes-mario flex-none"></i>
-      <p class="nes-balloon from-left nes-pointer flex-1 w-25">
-        <span  [style]="{'filter': blurred ? 'blur(0.5px)' : 'none'}">
-          {{ text }}
-        </span>
-      </p>
+    <i class="nes-mario flex-none"></i>
+    <p class="nes-balloon from-left nes-pointer flex-1 w-25">
+      <span [style]="{'filter': blurred ? 'blur(0.5px)' : 'none'}">
+        {{ contentText }}
+      </span>
+    </p>
   </div>
 
-  <div class="py-2">
-    <button type="button" (click)="chooseLanguage('my')" class="nes-btn is-primary w-full">Bahasa Melayu</button>
-  </div>
-  <div class="py-2">
-    <button type="button" (click)="chooseLanguage('en')" class="nes-btn is-success w-full">English</button>
+  <div class="space-y-2 py-2">
+    @for(lang of languages; track lang.code) {
+      <button
+        type="button"
+        (click)="chooseLanguage(lang.code)"
+        class="nes-btn w-full"
+        [class]="{
+          'is-primary': lang.code === 'my',
+          'is-success': lang.code === 'en'
+        }"
+      >
+        {{ lang.label }}
+      </button>
+    }
   </div>
 </div>

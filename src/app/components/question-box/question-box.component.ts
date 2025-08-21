@@ -1,6 +1,6 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Question } from '../model/Question';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { style } from '@angular/animations';
+import { Question } from '../../model/Question';
 
 @Component({
   selector: 'app-question-box',
@@ -9,24 +9,18 @@ import { style } from '@angular/animations';
   templateUrl: './question-box.component.html',
   styleUrl: './question-box.component.scss'
 })
-export class QuestionBoxComponent {
-  @Input()
-  no: number;
+export class QuestionBoxComponent implements OnInit {
+  @Input() no!: number;
+  @Input()totalQuestion!: number;
+  @Input() question!: Question | null;
 
-  @Input()
-  totalQuestion: number;
+  @Output() resultEmitter = new EventEmitter<number>();
 
-  @Input()
-  question: Question | null;
+  iconStyle!: string[];
+  selectedIconStyle!: string;
+  answer!: string;
 
-  @Output()
-  resultEmitter = new EventEmitter<number>();
-
-  iconStyle : string [];
-  selectedIconStyle: string;
-  answer: string;
-
-  constructor() {
+  ngOnInit() {
     this.no = 0;
     this.totalQuestion = 0;
     this.answer = "";
@@ -41,9 +35,7 @@ export class QuestionBoxComponent {
       "nes-kirby"
     ];
     this.selectedIconStyle = "";
-  }
 
-  ngOnInit() {
     this.randomizingIconStyle();
   }
 
