@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LanguageBoxComponent } from "./components/language-box/language-box.component";
 import { Question } from './model/Question';
@@ -10,13 +10,14 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
 import { QuestionService } from './service/question.service';
 import { JudgingMessageService } from './service/judging-message.service';
+import { DialogConfirmationComponent } from './components/dialog-confirmation/dialog-confirmation.component';
 
 export const MAX_QUESTION = 2;
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LanguageBoxComponent, QuestionBoxComponent, JudgingBoxComponent, TranslateModule, AppModule, FooterComponent, HeaderComponent],
+  imports: [RouterOutlet, LanguageBoxComponent, QuestionBoxComponent, JudgingBoxComponent, TranslateModule, AppModule, FooterComponent, HeaderComponent, DialogConfirmationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -30,6 +31,14 @@ export class AppComponent implements OnInit{
   currentQuestion: number = 1;
   maximumQuestion: number = MAX_QUESTION;
 
+  metadata = {
+    title: "Reset your progress",
+    text: "Are you sure to reset your progress ?",
+    confirmMessage: "Confirm",
+    cancelMessage: "Cancel"
+  }
+
+  @ViewChild(DialogConfirmationComponent) confirmationDialog !: DialogConfirmationComponent;
 
   ngOnInit(): void {
     this.translateService.setDefaultLang('en');
@@ -50,10 +59,18 @@ export class AppComponent implements OnInit{
   }
 
   handleResetQuestion() {
-    this.prefLang = "";
-    this.currentQuestion = 1;
-    this.questionList = [];
-    this.questionService.resetQuestion();
+    if (this.currentQuestion > 1) {
+      this.confirmationDialog.openDialog();
+    }
+  }
+
+  handleResetQuestionDialogResponse(option: boolean) {
+    if (option) {
+      this.prefLang = "";
+      this.questionList = [];
+      this.currentQuestion = 1;
+      this.questionService.resetQuestion();
+    }
   }
 
   get getQuestionMetadata() {

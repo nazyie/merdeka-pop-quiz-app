@@ -1,6 +1,8 @@
 <main>
   <app-header (reset)="handleResetQuestion()"/>
 
+  <app-dialog-confirmation (option)="handleResetQuestionDialogResponse($event)" [metadata]="metadata" />
+
   <div class="flex flex-col min-h-screen justify-center align-center">
     <div class="flex-grow mx-2 mt-32">
       <app-language-box [class]="{ 'hidden': this.prefLang }" (prefLang)="handlePreferedLanguageSelection($event)" />
