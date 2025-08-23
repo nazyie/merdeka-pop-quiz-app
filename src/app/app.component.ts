@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LanguageBoxComponent } from "./components/language-box/language-box.component";
-import { Question, QuestionList } from './model/Question';
+import { Question } from './model/Question';
 import { JudgingBoxComponent } from "./components/judging-box/judging-box.component";
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { AppModule } from './app.module';
@@ -47,6 +47,13 @@ export class AppComponent implements OnInit{
     this.prefLang = lang;
     this.translateService.setDefaultLang(lang);
     this.loadQuestion();
+  }
+
+  handleResetQuestion() {
+    this.prefLang = "";
+    this.currentQuestion = 1;
+    this.questionList = [];
+    this.questionService.resetQuestion();
   }
 
   get getQuestionMetadata() {
