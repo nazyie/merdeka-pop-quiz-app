@@ -10,19 +10,37 @@
 
   @for (item of question.options; track $index) {
   <div class="py-2">
-    <label class="nes-btn w-full" [class]="btnColors[$index]" (click)="chooseAnswer(item)">
+    <label
+      class="nes-btn w-full"
+      [ngClass]="[btnColors[$index], confirmSelectedAnswer ? 'is-disabled' : '']"
+      (click)="chooseAnswer(item)"
+    >
       <input type="radio" class="nes-radio" name="answer" [checked]="$index === 0" />
       <span>{{ item }}</span>
     </label>
   </div>
-  }
+}
 
 
+  @if (!confirmSelectedAnswer) {
   <div class="flex justify-end">
     <button type="button" class="nes-btn" [class]="{ 'is-disabled': !answer }" [disabled]="!answer"
       (click)="confirmAnswer()">
       > Confirm
     </button>
   </div>
+
+  }
+
+  @if (confirmSelectedAnswer) {
+  <div class="flex items-center m justify-between gap-4">
+    <p><span class="text-3xl">{{ resultIcon }}</span> {{ question.fact }}</p>
+    <button type="button" class="nes-btn"
+      (click)="proceedNextQuestion()">
+      > Next
+    </button>
+  </div>
+
+  }
 
 </div>

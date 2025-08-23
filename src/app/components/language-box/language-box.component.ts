@@ -10,7 +10,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class LanguageBoxComponent {
   @Output() prefLang = new EventEmitter<string>();
 
-
   greetingText = [
     { id: 1, lang: 'my', text: 'Champions! Pilih bahasa anda' },
     { id: 2, lang: 'en', text: 'Champions! Choose your language' },

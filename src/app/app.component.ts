@@ -12,7 +12,7 @@ import { QuestionService } from './service/question.service';
 import { JudgingMessageService } from './service/judging-message.service';
 import { DialogConfirmationComponent } from './components/dialog-confirmation/dialog-confirmation.component';
 
-export const MAX_QUESTION = 2;
+export const MAX_QUESTION = 10;
 
 @Component({
   selector: 'app-root',
@@ -24,7 +24,7 @@ export const MAX_QUESTION = 2;
 export class AppComponent implements OnInit{
   private questionService = inject(QuestionService);
   private translateService = inject(TranslateService);
-  private judingMessage = inject(JudgingMessageService); // eager loading the component
+  private judgingMessage = inject(JudgingMessageService); // eager loading the component
 
   questionList : Question[] = [];
   prefLang: string = "";

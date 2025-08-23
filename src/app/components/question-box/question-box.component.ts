@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Question } from '../../model/Question';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-question-box',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './question-box.component.html',
   styleUrl: './question-box.component.scss'
 })
@@ -33,23 +34,33 @@ export class QuestionBoxComponent implements OnInit {
 
   selectedIconStyle!: string;
   answer!: string;
+  confirmSelectedAnswer : boolean = false;
+  resultIcon!: string;
 
   ngOnInit() {
     this.randomizingIconStyle();
   }
 
   confirmAnswer() {
+    this.confirmSelectedAnswer = true;
+  }
+
+  proceedNextQuestion() {
     this.resultEmitter.emit(this.answer);
     this.resetValue();
   }
 
-
   chooseAnswer(answer: string) {
     this.answer = answer;
+    this.resultIcon = (this.question.answer == answer) ?
+    '✔' : '✖';
   }
 
   private resetValue() {
     this.answer = "";
+    this.confirmSelectedAnswer = false;
+    this.randomizingIconStyle();
+    this.resultIcon = "";
   }
 
   private getRandomElement<T>(array: T[]): T {
