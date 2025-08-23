@@ -1,0 +1,23 @@
+<nav class="bg-blue-600 fixed top-0 left-0 right-0 z-50 drop-shadow-lg">
+  <div class="container mx-auto flex justify-between items-center">
+    <span class="text-white text-xl font-bold" (click)="resetQuizProgress()">
+      <i class="snes-jp-logo"></i>
+    </span>
+
+    <div class="hidden gap-1 lg:flex">
+      <div class="bg-white rounded py-1 px-1 flex justify-center gap-2 items-center">
+        <span class="text-xl">{{ questionService.getCurrentScore }}</span>
+        <i class="nes-icon trophy"></i>
+      </div>
+      <div class="bg-white rounded py-1 px-1 flex justify-center gap-2 items-center">
+        <span class="text-xl">{{ questionService.getWrongScore }}</span>
+        <i class="nes-icon close"></i>
+      </div>
+    </div>
+
+    <div class="flex justify-center items-center bg-white rounded py-1 px-1 lg:hidden">
+      <span class="text-primary">SCORE_FINAL</span>
+      <i class="nes-icon trophy"></i>
+    </div>
+  </div>
+</nav>

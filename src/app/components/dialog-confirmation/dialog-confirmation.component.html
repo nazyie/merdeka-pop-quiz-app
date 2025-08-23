@@ -1,0 +1,12 @@
+<section>
+  <dialog #dialog class="nes-dialog" id="dialog-default">
+    <form method="dialog">
+      <p class="title">{{ metadata.title }}</p>
+      <p>{{ metadata.text }}</p>
+      <menu class="dialog-menu">
+        <button class="nes-btn mr-1" (click)="selectOption(false)">{{ metadata.cancelMessage }}</button>
+        <button class="nes-btn is-primary" (click)="selectOption(true)">{{ metadata.confirmMessage }}</button>
+      </menu>
+    </form>
+  </dialog>
+</section>

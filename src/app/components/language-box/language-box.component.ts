@@ -8,38 +8,47 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './language-box.component.scss'
 })
 export class LanguageBoxComponent {
+  @Output() prefLang = new EventEmitter<string>();
 
-  @Output()
-  pageEventEmitter = new EventEmitter<string>();
+  greetingText = [
+    { id: 1, lang: 'my', text: 'Champions! Pilih bahasa anda' },
+    { id: 2, lang: 'en', text: 'Champions! Choose your language' },
+    { id: 3, lang: 'cn', text: '冠军们！请选择你的语言' },
+    { id: 4, lang: 'tm', text: 'சாம்பியன்ஸ்! உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்' }
+  ];
 
-  currLang: number = 1;
-  text: string;
-  intervalId: any;
+  languages = [
+    { code: 'my', label: 'Bahasa Malaysia' },
+    { code: 'en', label: 'English' },
+    { code: 'cn', label: '中文 (Chinese)' },
+    { code: 'tm', label: 'தமிழ் (Tamil)' }
+  ];
+
+
+  languageOption: number = 1;
+  contentText: string = this.greetingText[0].text;
   blurred: boolean = false;
 
+
   constructor() {
-    this.text = 'Champions! Choose your language';
+    this.contentText = 'Champions! Choose your language';
   }
 
   ngOnInit() {
-    this.intervalId = setInterval(() => this.toggleText(), 1500);
+    setInterval(() => this.switchTextContentByInterval(), 1500);
   }
 
-  toggleText() {
+  switchTextContentByInterval() {
     if (this.blurred) {
-      if (this.currLang == 1)
-        this.text = 'Champions! Pilih bahasa anda';
-      if (this.currLang == 2)
-        this.text = 'Champions! Choose your language';
-      this.currLang++;
+      const lang = this.greetingText.find(l => l.id === this.languageOption);
+      this.contentText = lang ? lang.text : this.greetingText[0].text;
+      this.languageOption = this.languageOption % this.greetingText.length + 1;
     }
 
     this.blurred = !this.blurred;
-    if (this.currLang > 2)
-      this.currLang = 1;
   }
 
   chooseLanguage(lang: string) {
-    this.pageEventEmitter.emit(lang);
+    this.prefLang.emit(lang);
   }
 }
