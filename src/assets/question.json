@@ -3,104 +3,499 @@
     "lang": "my",
     "questions": [
       {
-        "question": "Bilakah Malaysia memperoleh kemerdekaan?",
-        "options": [
-          "31 Ogos 1957",
-          "16 September 1963",
-          "31 Ogos 1965",
-          "1 Januari 1957"
-        ],
-        "answer": "31 Ogos 1957"
+        "question": "Bilakah Tanah Melayu mencapai kemerdekaan?",
+        "options": ["31 Ogos 1957", "16 September 1963", "31 Ogos 1965", "1 Januari 1957"],
+        "answer": "31 Ogos 1957",
+        "fact": "Tanah Melayu mencapai kemerdekaan daripada British pada 31 Ogos 1957."
       },
       {
-        "question": "Siapakah Perdana Menteri pertama Malaysia?",
-        "options": [
-          "Tunku Abdul Rahman",
-          "Tun Abdul Razak",
-          "Tun Hussein Onn",
-          "Mahathir Mohamad"
-        ],
-        "answer": "Tunku Abdul Rahman"
+        "question": "Siapakah Perdana Menteri pertama Persekutuan Tanah Melayu?",
+        "options": ["Tunku Abdul Rahman", "Tun Abdul Razak", "Tun Hussein Onn", "Mahathir Mohamad"],
+        "answer": "Tunku Abdul Rahman",
+        "fact": "Tunku Abdul Rahman dikenali sebagai 'Bapa Kemerdekaan'."
       },
       {
-        "question": "Apakah lagu kebangsaan Malaysia?",
-        "options": [
-          "Negaraku",
-          "Jalur Gemilang",
-          "Tanah Pusaka",
-          "Malaysia Berjaya"
-        ],
-        "answer": "Negaraku"
+        "question": "Di manakah upacara kemerdekaan pada 1957 diadakan?",
+        "options": ["Stadium Merdeka", "Dataran Merdeka", "Parlimen", "Istana Negara"],
+        "answer": "Stadium Merdeka",
+        "fact": "Upacara kemerdekaan diadakan di Stadium Merdeka, Kuala Lumpur."
       },
       {
-        "question": "Negeri manakah di Malaysia yang pertama memperoleh kemerdekaan?",
-        "options": [
-          "Johor",
-          "Pulau Pinang",
-          "Sarawak",
-          "Melaka"
-        ],
-        "answer": "Melaka"
+        "question": "Apakah laungan keramat yang dibuat oleh Tunku Abdul Rahman pada hari kemerdekaan?",
+        "options": ["Merdeka!", "Hidup Melayu!", "Malaysia!", "Bebas!"],
+        "answer": "Merdeka!",
+        "fact": "Tunku Abdul Rahman melaungkan 'Merdeka!' sebanyak tujuh kali."
       },
       {
-        "question": "Apakah nama deklarasi yang membawa kepada pembentukan Malaysia?",
-        "options": [
-          "Deklarasi Merdeka",
-          "Perjanjian Persekutuan",
-          "Pengisytiharan Malaysia",
-          "Perjanjian Malaysia"
-        ],
-        "answer": "Perjanjian Malaysia"
+        "question": "Bendera Malaysia juga dikenali sebagai apa?",
+        "options": ["Jalur Gemilang", "Sang Saka Merah Putih", "Union Jack", "Bendera Rakyat"],
+        "answer": "Jalur Gemilang",
+        "fact": "Bendera Malaysia dinamakan Jalur Gemilang pada tahun 1997."
       },
       {
-        "question": "Malaysia memperoleh kemerdekaan dari negara manakah?",
-        "options": [
-          "United Kingdom",
-          "Belanda",
-          "Portugal",
-          "Jepun"
-        ],
-        "answer": "United Kingdom"
+        "question": "Siapakah yang mencipta reka bentuk Jalur Gemilang?",
+        "options": ["Mohamed Hamzah", "Tunku Abdul Rahman", "Tun Razak", "Onn Jaafar"],
+        "answer": "Mohamed Hamzah",
+        "fact": "Mohamed Hamzah, seorang arkitek kerajaan, mereka Jalur Gemilang."
       },
       {
-        "question": "Apa yang diwakili oleh bintang 14 mata pada bendera Malaysia?",
-        "options": [
-          "13 negeri dan Kerajaan Persekutuan",
-          "14 kumpulan etnik",
-          "14 bandar utama",
-          "14 hari sambutan kemerdekaan"
-        ],
-        "answer": "13 negeri dan Kerajaan Persekutuan"
+        "question": "Apakah warna yang terdapat pada Jalur Gemilang?",
+        "options": ["Merah, Putih, Biru, Kuning", "Hijau, Putih, Merah, Hitam", "Biru, Putih, Hijau, Kuning", "Merah, Hijau, Kuning, Putih"],
+        "answer": "Merah, Putih, Biru, Kuning",
+        "fact": "Warna-warna pada Jalur Gemilang melambangkan perpaduan dan kedaulatan negara."
       },
       {
-        "question": "Negeri manakah di Malaysia yang dikenali sebagai British Borneo sebelum kemerdekaan?",
-        "options": [
-          "Sabah",
-          "Sarawak",
-          "Kelantan",
-          "Perak"
-        ],
-        "answer": "Sabah"
+        "question": "Apakah lambang bulan sabit pada bendera Malaysia?",
+        "options": ["Islam sebagai agama rasmi", "Kemajuan", "Keadilan", "Kemerdekaan"],
+        "answer": "Islam sebagai agama rasmi",
+        "fact": "Bulan sabit pada Jalur Gemilang melambangkan Islam sebagai agama rasmi Persekutuan."
       },
       {
-        "question": "Siapakah yang dikenali sebagai 'Bapa Kemerdekaan' di Malaysia?",
-        "options": [
-          "Tunku Abdul Rahman",
-          "Tun Abdul Razak",
-          "Tun Hussein Onn",
-          "Sultan Abdul Samad"
-        ],
-        "answer": "Tunku Abdul Rahman"
+        "question": "Apakah 14 jalur pada Jalur Gemilang melambangkan?",
+        "options": ["13 negeri dan kerajaan persekutuan", "14 negeri", "14 rakyat", "14 parti politik"],
+        "answer": "13 negeri dan kerajaan persekutuan",
+        "fact": "14 jalur melambangkan kesatuan 13 negeri dan kerajaan persekutuan."
       },
       {
-        "question": "Bangunan manakah yang menjadi lokasi sambutan Hari Merdeka yang pertama?",
-        "options": [
-          "Bangunan Sultan Abdul Samad",
-          "Putrajaya",
-          "Menara Kuala Lumpur",
-          "Istana Negara"
-        ],
-        "answer": "Bangunan Sultan Abdul Samad"
+        "question": "Siapakah yang digelar 'Bapa Malaysia'?",
+        "options": ["Tunku Abdul Rahman", "Tun Abdul Razak", "Tun Hussein Onn", "Mahathir Mohamad"],
+        "answer": "Tunku Abdul Rahman",
+        "fact": "Beliau mendapat gelaran ini kerana memimpin negara mencapai kemerdekaan."
+      },
+      {
+        "question": "Apakah nama lagu kebangsaan Malaysia?",
+        "options": ["Negaraku", "Merdeka Tanah Airku", "Malaysia Raya", "Tanah Pusaka"],
+        "answer": "Negaraku",
+        "fact": "Lagu Negaraku dipilih sebagai lagu kebangsaan pada tahun 1957."
+      },
+      {
+        "question": "Negaraku diadaptasi daripada lagu negeri manakah?",
+        "options": ["Perak", "Johor", "Pahang", "Selangor"],
+        "answer": "Perak",
+        "fact": "Negaraku berasal daripada lagu rasmi negeri Perak."
+      },
+      {
+        "question": "Apakah warna pakaian rasmi Tunku Abdul Rahman semasa mengisytiharkan kemerdekaan?",
+        "options": ["Putih", "Hitam", "Biru", "Merah"],
+        "answer": "Putih",
+        "fact": "Tunku Abdul Rahman memakai pakaian tradisional Melayu berwarna putih."
+      },
+      {
+        "question": "Siapakah Pesuruhjaya Tinggi British terakhir di Tanah Melayu?",
+        "options": ["Sir Donald MacGillivray", "Sir Henry Gurney", "Sir Gerald Templer", "Sir Edward Gent"],
+        "answer": "Sir Donald MacGillivray",
+        "fact": "Sir Donald MacGillivray adalah Pesuruhjaya Tinggi British terakhir sebelum kemerdekaan."
+      },
+      {
+        "question": "Apakah nama dokumen rasmi kemerdekaan yang ditandatangani?",
+        "options": ["Perjanjian Kemerdekaan", "Perlembagaan Malaysia", "Piagam Merdeka", "Deklarasi Rakyat"],
+        "answer": "Perjanjian Kemerdekaan",
+        "fact": "Perjanjian Kemerdekaan ditandatangani di London pada tahun 1956."
+      },
+      {
+        "question": "Bilakah Perjanjian Kemerdekaan ditandatangani?",
+        "options": ["8 Februari 1956", "31 Ogos 1957", "16 September 1963", "1 Januari 1957"],
+        "answer": "8 Februari 1956",
+        "fact": "Perjanjian ini ditandatangani di Lancaster House, London."
+      },
+      {
+        "question": "Apakah peranan Dataran Merdeka pada 31 Ogos 1957?",
+        "options": ["Union Jack diturunkan", "Perarakan Merdeka", "Pertandingan rakyat", "Perarakan tentera"],
+        "answer": "Union Jack diturunkan",
+        "fact": "Union Jack diturunkan dan Jalur Gemilang dinaikkan di Dataran Merdeka."
+      },
+      {
+        "question": "Apakah institusi yang menjadi lambang demokrasi selepas merdeka?",
+        "options": ["Parlimen", "Mahkamah", "Istana Negara", "Balai Polis"],
+        "answer": "Parlimen",
+        "fact": "Parlimen Malaysia mula berfungsi selepas kemerdekaan sebagai lambang demokrasi."
+      },
+      {
+        "question": "Apakah slogan kemerdekaan Malaysia?",
+        "options": ["Merdeka!", "Kebebasan!", "Malaysia Jaya!", "Negara Kita"],
+        "answer": "Merdeka!",
+        "fact": "Laungan 'Merdeka!' menjadi slogan rasmi sejak 1957."
+      },
+      {
+        "question": "Apakah peranan rakyat pada Hari Kemerdekaan?",
+        "options": ["Mengibarkan Jalur Gemilang", "Menyanyi Negaraku", "Hadir ke perarakan", "Semua di atas"],
+        "answer": "Semua di atas",
+        "fact": "Rakyat menunjukkan semangat patriotik melalui pelbagai aktiviti sambutan."
+      }
+    ]
+  },
+  {
+    "lang": "en",
+    "questions": [
+      {
+        "question": "When did Malaya gain independence?",
+        "options": ["31 August 1957", "16 September 1963", "31 August 1965", "1 January 1957"],
+        "answer": "31 August 1957",
+        "fact": "Malaya gained independence from the British on 31 August 1957."
+      },
+      {
+        "question": "Who was the first Prime Minister of Malaya?",
+        "options": ["Tunku Abdul Rahman", "Tun Abdul Razak", "Tun Hussein Onn", "Mahathir Mohamad"],
+        "answer": "Tunku Abdul Rahman",
+        "fact": "Tunku Abdul Rahman is known as the 'Father of Independence'."
+      },
+      {
+        "question": "Where was the independence ceremony held in 1957?",
+        "options": ["Stadium Merdeka", "Merdeka Square", "Parliament", "National Palace"],
+        "answer": "Stadium Merdeka",
+        "fact": "The independence ceremony was held at Stadium Merdeka in Kuala Lumpur."
+      },
+      {
+        "question": "What was the famous chant declared by Tunku Abdul Rahman on Independence Day?",
+        "options": ["Merdeka!", "Long Live Malaya!", "Malaysia!", "Freedom!"],
+        "answer": "Merdeka!",
+        "fact": "Tunku Abdul Rahman shouted 'Merdeka!' seven times."
+      },
+      {
+        "question": "What is the national flag of Malaysia called?",
+        "options": ["Jalur Gemilang", "Sang Saka Merah Putih", "Union Jack", "People’s Flag"],
+        "answer": "Jalur Gemilang",
+        "fact": "The Malaysian flag was named Jalur Gemilang in 1997."
+      },
+      {
+        "question": "Who designed the Jalur Gemilang?",
+        "options": ["Mohamed Hamzah", "Tunku Abdul Rahman", "Tun Razak", "Onn Jaafar"],
+        "answer": "Mohamed Hamzah",
+        "fact": "Mohamed Hamzah, a government architect, designed the Jalur Gemilang."
+      },
+      {
+        "question": "What are the colors on the Jalur Gemilang?",
+        "options": ["Red, White, Blue, Yellow", "Green, White, Red, Black", "Blue, White, Green, Yellow", "Red, Green, Yellow, White"],
+        "answer": "Red, White, Blue, Yellow",
+        "fact": "The colors on the Jalur Gemilang symbolize unity and sovereignty."
+      },
+      {
+        "question": "What does the crescent on the Malaysian flag represent?",
+        "options": ["Islam as the official religion", "Progress", "Justice", "Independence"],
+        "answer": "Islam as the official religion",
+        "fact": "The crescent symbolizes Islam as the official religion of the Federation."
+      },
+      {
+        "question": "What do the 14 stripes on the Jalur Gemilang represent?",
+        "options": ["13 states and the federal government", "14 states", "14 people", "14 political parties"],
+        "answer": "13 states and the federal government",
+        "fact": "The 14 stripes represent the unity of the 13 states and the federal government."
+      },
+      {
+        "question": "Who is known as the 'Father of Malaysia'?",
+        "options": ["Tunku Abdul Rahman", "Tun Abdul Razak", "Tun Hussein Onn", "Mahathir Mohamad"],
+        "answer": "Tunku Abdul Rahman",
+        "fact": "He earned this title for leading the country to independence."
+      },
+      {
+        "question": "What is the national anthem of Malaysia?",
+        "options": ["Negaraku", "Merdeka Tanah Airku", "Malaysia Raya", "Tanah Pusaka"],
+        "answer": "Negaraku",
+        "fact": "Negaraku was chosen as the national anthem in 1957."
+      },
+      {
+        "question": "Which state’s anthem inspired the Negaraku?",
+        "options": ["Perak", "Johor", "Pahang", "Selangor"],
+        "answer": "Perak",
+        "fact": "Negaraku was adapted from the state anthem of Perak."
+      },
+      {
+        "question": "What was the color of Tunku Abdul Rahman’s attire during the proclamation of independence?",
+        "options": ["White", "Black", "Blue", "Red"],
+        "answer": "White",
+        "fact": "Tunku Abdul Rahman wore a traditional Malay attire in white."
+      },
+      {
+        "question": "Who was the last British High Commissioner in Malaya?",
+        "options": ["Sir Donald MacGillivray", "Sir Henry Gurney", "Sir Gerald Templer", "Sir Edward Gent"],
+        "answer": "Sir Donald MacGillivray",
+        "fact": "He was the last British High Commissioner before independence."
+      },
+      {
+        "question": "What was the name of the official independence document signed?",
+        "options": ["Independence Agreement", "Constitution of Malaysia", "Merdeka Charter", "People’s Declaration"],
+        "answer": "Independence Agreement",
+        "fact": "The Independence Agreement was signed in London in 1956."
+      },
+      {
+        "question": "When was the Independence Agreement signed?",
+        "options": ["8 February 1956", "31 August 1957", "16 September 1963", "1 January 1957"],
+        "answer": "8 February 1956",
+        "fact": "The agreement was signed at Lancaster House, London."
+      },
+      {
+        "question": "What happened at Merdeka Square on 31 August 1957?",
+        "options": ["Union Jack was lowered", "Independence Parade", "Cultural Performance", "Military March"],
+        "answer": "Union Jack was lowered",
+        "fact": "The Union Jack was lowered and the Jalur Gemilang was raised."
+      },
+      {
+        "question": "Which institution became a symbol of democracy after independence?",
+        "options": ["Parliament", "Court", "National Palace", "Police Station"],
+        "answer": "Parliament",
+        "fact": "The Malaysian Parliament became a symbol of democracy after independence."
+      },
+      {
+        "question": "What was the official independence slogan?",
+        "options": ["Merdeka!", "Freedom!", "Glorious Malaysia!", "Our Nation"],
+        "answer": "Merdeka!",
+        "fact": "The chant 'Merdeka!' became the official slogan since 1957."
+      },
+      {
+        "question": "How do Malaysians usually celebrate Independence Day?",
+        "options": ["Raise the Jalur Gemilang", "Sing the Negaraku", "Attend the parade", "All of the above"],
+        "answer": "All of the above",
+        "fact": "Malaysians show patriotism through various Independence Day activities."
+      }
+    ]
+  },
+  {
+    "lang": "cn",
+    "questions": [
+      {
+        "question": "马来亚在哪一天独立？",
+        "options": ["1957年8月31日", "1963年9月16日", "1965年8月31日", "1957年1月1日"],
+        "answer": "1957年8月31日",
+        "fact": "马来亚于1957年8月31日从英国获得独立。"
+      },
+      {
+        "question": "谁是马来亚的第一任首相？",
+        "options": ["东姑阿都拉曼", "敦拉萨", "敦胡先翁", "马哈蒂尔"],
+        "answer": "东姑阿都拉曼",
+        "fact": "东姑阿都拉曼被称为“独立之父”。"
+      },
+      {
+        "question": "1957年的独立典礼在哪里举行？",
+        "options": ["独立体育场", "独立广场", "国会大厦", "国家皇宫"],
+        "answer": "独立体育场",
+        "fact": "独立典礼在吉隆坡的独立体育场举行。"
+      },
+      {
+        "question": "独立日当天，东姑阿都拉曼喊出了什么口号？",
+        "options": ["Merdeka!", "马来亚万岁!", "Malaysia!", "自由!"],
+        "answer": "Merdeka!",
+        "fact": "东姑阿都拉曼喊了七次“Merdeka!”。"
+      },
+      {
+        "question": "马来西亚国旗的名字是什么？",
+        "options": ["辉煌条纹", "红白旗", "米字旗", "人民旗"],
+        "answer": "辉煌条纹",
+        "fact": "马来西亚国旗在1997年被命名为“辉煌条纹”（Jalur Gemilang）。"
+      },
+      {
+        "question": "谁设计了马来西亚国旗？",
+        "options": ["莫哈末·哈姆扎", "东姑阿都拉曼", "敦拉萨", "翁嘉化"],
+        "answer": "莫哈末·哈姆扎",
+        "fact": "莫哈末·哈姆扎是一位政府建筑师，他设计了国旗。"
+      },
+      {
+        "question": "马来西亚国旗包含哪些颜色？",
+        "options": ["红、白、蓝、黄", "绿、白、红、黑", "蓝、白、绿、黄", "红、绿、黄、白"],
+        "answer": "红、白、蓝、黄",
+        "fact": "这些颜色象征着团结和国家主权。"
+      },
+      {
+        "question": "马来西亚国旗上的新月象征什么？",
+        "options": ["伊斯兰教为官方宗教", "进步", "正义", "独立"],
+        "answer": "伊斯兰教为官方宗教",
+        "fact": "新月象征伊斯兰教是联邦的官方宗教。"
+      },
+      {
+        "question": "国旗上的14条纹象征什么？",
+        "options": ["13个州和联邦政府", "14个州", "14位人民", "14个政党"],
+        "answer": "13个州和联邦政府",
+        "fact": "14条纹象征着13个州和联邦政府的团结。"
+      },
+      {
+        "question": "谁被称为“马来西亚之父”？",
+        "options": ["东姑阿都拉曼", "敦拉萨", "敦胡先翁", "马哈蒂尔"],
+        "answer": "东姑阿都拉曼",
+        "fact": "他因带领国家独立而获得此称号。"
+      },
+      {
+        "question": "马来西亚的国歌叫什么名字？",
+        "options": ["Negaraku", "我的祖国独立", "光荣马来西亚", "祖国之歌"],
+        "answer": "Negaraku",
+        "fact": "《Negaraku》在1957年被选为国歌。"
+      },
+      {
+        "question": "《Negaraku》改编自哪个州的州歌？",
+        "options": ["霹雳州", "柔佛州", "彭亨州", "雪兰莪州"],
+        "answer": "霹雳州",
+        "fact": "《Negaraku》改编自霹雳州的州歌。"
+      },
+      {
+        "question": "东姑阿都拉曼宣布独立时穿的衣服是什么颜色？",
+        "options": ["白色", "黑色", "蓝色", "红色"],
+        "answer": "白色",
+        "fact": "他穿着白色的传统马来服装。"
+      },
+      {
+        "question": "谁是马来亚最后一任英国高级专员？",
+        "options": ["唐纳德·麦吉尔里夫爵士", "亨利·格尼爵士", "杰拉尔德·坦普勒爵士", "爱德华·真特爵士"],
+        "answer": "唐纳德·麦吉尔里夫爵士",
+        "fact": "他是独立前的最后一任英国高级专员。"
+      },
+      {
+        "question": "独立的正式文件叫什么名字？",
+        "options": ["独立协议", "马来西亚宪法", "独立宪章", "人民宣言"],
+        "answer": "独立协议",
+        "fact": "独立协议于1956年在伦敦签署。"
+      },
+      {
+        "question": "独立协议是什么时候签署的？",
+        "options": ["1956年2月8日", "1957年8月31日", "1963年9月16日", "1957年1月1日"],
+        "answer": "1956年2月8日",
+        "fact": "该协议在伦敦的兰开斯特宫签署。"
+      },
+      {
+        "question": "1957年8月31日，在独立广场发生了什么？",
+        "options": ["降下米字旗", "独立游行", "文化表演", "军事阅兵"],
+        "answer": "降下米字旗",
+        "fact": "米字旗被降下，辉煌条纹被升起。"
+      },
+      {
+        "question": "独立后，哪个机构成为民主的象征？",
+        "options": ["国会", "法院", "国家皇宫", "警察局"],
+        "answer": "国会",
+        "fact": "马来西亚国会在独立后成为民主的象征。"
+      },
+      {
+        "question": "独立的口号是什么？",
+        "options": ["Merdeka!", "自由!", "光荣马来西亚!", "我们的国家"],
+        "answer": "Merdeka!",
+        "fact": "自1957年以来，“Merdeka!”成为独立口号。"
+      },
+      {
+        "question": "马来西亚人通常如何庆祝独立日？",
+        "options": ["升起国旗", "唱国歌", "参加游行", "以上全部"],
+        "answer": "以上全部",
+        "fact": "马来西亚人通过各种庆祝活动展现爱国精神。"
+      }
+    ]
+  },
+  {
+    "lang": "tm",
+    "questions": [
+      {
+        "question": "மலாயா எப்போது சுதந்திரம் பெற்றது?",
+        "options": ["31 ஆகஸ்ட் 1957", "16 செப்டம்பர் 1963", "31 ஆகஸ்ட் 1965", "1 ஜனவரி 1957"],
+        "answer": "31 ஆகஸ்ட் 1957",
+        "fact": "மலாயா 1957 ஆகஸ்ட் 31 அன்று பிரிட்டிஷ் ஆட்சியிலிருந்து சுதந்திரம் பெற்றது."
+      },
+      {
+        "question": "மலாயாவின் முதல் பிரதமர் யார்?",
+        "options": ["துங்கு அப்துல் ரஹ்மான்", "துன் அப்துல் ரசாக்", "துன் ஹுசேன் ஓன்", "மகாதீர் முகம்மது"],
+        "answer": "துங்கு அப்துல் ரஹ்மான்",
+        "fact": "அவர் 'சுதந்திர தந்தை' என அழைக்கப்படுகிறார்."
+      },
+      {
+        "question": "1957 ஆம் ஆண்டில் சுதந்திர விழா எங்கு நடைபெற்றது?",
+        "options": ["மெர்டேகா ஸ்டேடியம்", "மெர்டேகா சதுக்கம்", "பாராளுமன்றம்", "தேசிய அரண்மனை"],
+        "answer": "மெர்டேகா ஸ்டேடியம்",
+        "fact": "சுதந்திர விழா கோலாலம்பூரில் உள்ள மெர்டேகா ஸ்டேடியத்தில் நடைபெற்றது."
+      },
+      {
+        "question": "சுதந்திர நாளில் துங்கு அப்துல் ரஹ்மான் எந்த கோஷத்தை முழங்கினார்?",
+        "options": ["Merdeka!", "மலாயா வாழ்க!", "Malaysia!", "சுதந்திரம்!"],
+        "answer": "Merdeka!",
+        "fact": "துங்கு அப்துல் ரஹ்மான் 'Merdeka!' என ஏழு முறை முழங்கினார்."
+      },
+      {
+        "question": "மலேசிய தேசியக் கொடியின் பெயர் என்ன?",
+        "options": ["ஜாலூர் கெமிலாங்", "சங்க சகா", "யூனியன் ஜாக்", "மக்கள் கொடி"],
+        "answer": "ஜாலூர் கெமிலாங்",
+        "fact": "1997 ஆம் ஆண்டு மலேசியக் கொடி 'ஜாலூர் கெமிலாங்' என்று பெயரிடப்பட்டது."
+      },
+      {
+        "question": "ஜாலூர் கெமிலாங் யாரால் வடிவமைக்கப்பட்டது?",
+        "options": ["மொஹமட் ஹம்சா", "துங்கு அப்துல் ரஹ்மான்", "துன் ரசாக்", "ஒன் ஜாபார்"],
+        "answer": "மொஹமட் ஹம்சா",
+        "fact": "அரசாங்க கட்டிடக் கலைஞரான மொஹமட் ஹம்சா கொடியை வடிவமைத்தார்."
+      },
+      {
+        "question": "ஜாலூர் கெமிலாங் எந்த நிறங்களை கொண்டுள்ளது?",
+        "options": ["சிவப்பு, வெள்ளை, நீலம், மஞ்சள்", "பச்சை, வெள்ளை, சிவப்பு, கருப்பு", "நீலம், வெள்ளை, பச்சை, மஞ்சள்", "சிவப்பு, பச்சை, மஞ்சள், வெள்ளை"],
+        "answer": "சிவப்பு, வெள்ளை, நீலம், மஞ்சள்",
+        "fact": "இந்த நிறங்கள் ஒற்றுமையையும் நாட்டின் இறையாண்மையையும் குறிக்கின்றன."
+      },
+      {
+        "question": "மலேசியக் கொடியில் உள்ள crescente எதை குறிக்கிறது?",
+        "options": ["இஸ்லாம் அதிகாரப்பூர்வ மதம்", "முன்னேற்றம்", "நீதி", "சுதந்திரம்"],
+        "answer": "இஸ்லாம் அதிகாரப்பூர்வ மதம்",
+        "fact": "கொடியின் crescente, இஸ்லாம் அதிகாரப்பூர்வ மதம் என்பதை குறிக்கிறது."
+      },
+      {
+        "question": "ஜாலூர் கெமிலாஙில் உள்ள 14 பட்டைகள் எதை குறிக்கின்றன?",
+        "options": ["13 மாநிலங்கள் மற்றும் கூட்டாட்சி அரசு", "14 மாநிலங்கள்", "14 மக்கள்", "14 அரசியல் கட்சிகள்"],
+        "answer": "13 மாநிலங்கள் மற்றும் கூட்டாட்சி அரசு",
+        "fact": "14 பட்டைகள் 13 மாநிலங்களும் கூட்டாட்சி அரசும் இணைந்த ஒற்றுமையை குறிக்கின்றன."
+      },
+      {
+        "question": "‘மலேசியாவின் தந்தை’ என அழைக்கப்படுபவர் யார்?",
+        "options": ["துங்கு அப்துல் ரஹ்மான்", "துன் அப்துல் ரசாக்", "துன் ஹுசேன் ஓன்", "மகாதீர் முகம்மது"],
+        "answer": "துங்கு அப்துல் ரஹ்மான்",
+        "fact": "நாட்டை சுதந்திரத்திற்கு வழிநடத்தியதால் அவர் இந்த பட்டத்தை பெற்றார்."
+      },
+      {
+        "question": "மலேசியாவின் தேசிய கீதம் என்ன?",
+        "options": ["Negaraku", "என் நாடு சுதந்திரம்", "மலேசியா ஜெயா", "தாய்நாடு பாடல்"],
+        "answer": "Negaraku",
+        "fact": "Negaraku 1957 ஆம் ஆண்டு தேசிய கீதமாக தேர்ந்தெடுக்கப்பட்டது."
+      },
+      {
+        "question": "Negaraku எந்த மாநிலத்தின் பாடலிலிருந்து மாற்றப்பட்டது?",
+        "options": ["பேராக்", "ஜொகூர்", "பாஹாங்", "செலாங்கூர்"],
+        "answer": "பேராக்",
+        "fact": "Negaraku, பேராக் மாநிலத்தின் பாடலிலிருந்து மாற்றப்பட்டது."
+      },
+      {
+        "question": "சுதந்திர அறிவிப்பின் போது துங்கு அப்துல் ரஹ்மான் அணிந்த ஆடையின் நிறம் என்ன?",
+        "options": ["வெள்ளை", "கருப்பு", "நீலம்", "சிவப்பு"],
+        "answer": "வெள்ளை",
+        "fact": "அவர் வெள்ளை நிற பாரம்பரிய மலாய் உடை அணிந்திருந்தார்."
+      },
+      {
+        "question": "மலாயாவின் கடைசி பிரிட்டிஷ் உயர் ஆணையர் யார்?",
+        "options": ["சர் டொனால்ட் மேக்‌கில்ரே", "சர் ஹென்றி கெர்னி", "சர் ஜெரால்டு டெம்ப்லர்", "சர் எட்வர்ட் ஜென்ட்"],
+        "answer": "சர் டொனால்ட் மேக்‌கில்ரே",
+        "fact": "அவர் சுதந்திரத்திற்கு முன் கடைசி பிரிட்டிஷ் உயர் ஆணையராக இருந்தார்."
+      },
+      {
+        "question": "சுதந்திரத்தின் உத்தியோகபூர்வ ஆவணம் என்ன அழைக்கப்பட்டது?",
+        "options": ["சுதந்திர ஒப்பந்தம்", "மலேசிய அரசியல் சட்டம்", "மெர்டேகா அறிக்கை", "மக்கள் பிரகடனம்"],
+        "answer": "சுதந்திர ஒப்பந்தம்",
+        "fact": "சுதந்திர ஒப்பந்தம் 1956 லண்டனில் கையெழுத்திடப்பட்டது."
+      },
+      {
+        "question": "சுதந்திர ஒப்பந்தம் எப்போது கையெழுத்திடப்பட்டது?",
+        "options": ["8 பிப்ரவரி 1956", "31 ஆகஸ்ட் 1957", "16 செப்டம்பர் 1963", "1 ஜனவரி 1957"],
+        "answer": "8 பிப்ரவரி 1956",
+        "fact": "இந்த ஒப்பந்தம் லண்டனில் உள்ள லாங்காஸ்டர் ஹவுசில் கையெழுத்திடப்பட்டது."
+      },
+      {
+        "question": "1957 ஆகஸ்ட் 31 அன்று மெர்டேகா சதுக்கத்தில் என்ன நடந்தது?",
+        "options": ["யூனியன் ஜாக் இறக்கப்பட்டது", "சுதந்திர அணிவகுப்பு", "கலாச்சார நிகழ்ச்சி", "இராணுவ அணிவகுப்பு"],
+        "answer": "யூனியன் ஜாக் இறக்கப்பட்டது",
+        "fact": "யூனியன் ஜாக் இறக்கப்பட்டு, ஜாலூர் கெமிலாங் ஏற்றப்பட்டது."
+      },
+      {
+        "question": "சுதந்திரத்திற்குப் பிறகு எந்த நிறுவனம் ஜனநாயகத்தின் சின்னமாக ஆனது?",
+        "options": ["பாராளுமன்றம்", "நீதிமன்றம்", "தேசிய அரண்மனை", "காவல் நிலையம்"],
+        "answer": "பாராளுமன்றம்",
+        "fact": "சுதந்திரத்திற்குப் பிறகு மலேசிய பாராளுமன்றம் ஜனநாயகத்தின் சின்னமாக ஆனது."
+      },
+      {
+        "question": "சுதந்திரக் கோஷம் என்ன?",
+        "options": ["Merdeka!", "சுதந்திரம்!", "மலேசியா ஜெயா!", "எங்கள் நாடு"],
+        "answer": "Merdeka!",
+        "fact": "1957 முதல் 'Merdeka!' உத்தியோகபூர்வ கோஷமாக உள்ளது."
+      },
+      {
+        "question": "சுதந்திர நாளில் மலேசியர்கள் பொதுவாக எப்படிச் கொண்டாடுகிறார்கள்?",
+        "options": ["ஜாலூர் கெமிலாங் ஏற்றுதல்", "Negaraku பாடல் பாடுதல்", "அணிவகுப்பில் பங்கேற்பது", "மேலே உள்ள அனைத்தும்"],
+        "answer": "மேலே உள்ள அனைத்தும்",
+        "fact": "மலேசியர்கள் பல்வேறு கொண்டாட்ட நிகழ்வுகள் மூலம் தேசபக்தியை வெளிப்படுத்துகின்றனர்."
       }
     ]
   }

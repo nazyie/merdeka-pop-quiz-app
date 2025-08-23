@@ -10,7 +10,7 @@
     </p>
   </div>
 
-  <div class="space-y-2 py-2">
+  <div class="flex flex-col gap-3">
     @for(lang of languages; track lang.code) {
       <button
         type="button"
@@ -18,7 +18,9 @@
         class="nes-btn w-full"
         [class]="{
           'is-primary': lang.code === 'my',
-          'is-success': lang.code === 'en'
+          'is-success': lang.code === 'en',
+          'is-warning': lang.code === 'tm',
+          'is-error': lang.code === 'cn'
         }"
       >
         {{ lang.label }}

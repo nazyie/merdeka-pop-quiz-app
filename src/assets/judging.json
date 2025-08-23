@@ -2,73 +2,145 @@
   {
     "score": 0,
     "lang": "my",
-    "title": "Bencana Besar",
-    "text": "Wah, ini memang dah melampau. Macam tak pernah dengar pasal Malaysia pun. Mungkin sejarah bukan untuk kau… atau apa-apa pun sebenarnya."
+    "title": "Kosong Kosong",
+    "text": "Hmm… nampaknya sejarah Malaysia belum masuk langsung. Jangan risau, semua orang kena mula dari kosong juga kan?"
   },
   {
     "score": 0,
     "lang": "en",
-    "title": "Total Disaster",
-    "text": "Wow, this is beyond bad. It’s like you’ve never heard of Malaysia before. Maybe history isn’t your thing… or anything, really."
+    "title": "Big Zero",
+    "text": "Ouch… looks like Malaysia’s history didn’t stick at all. Don’t worry, every pro once started at zero too!"
+  },
+  {
+    "score": 0,
+    "lang": "cn",
+    "title": "零分达人",
+    "text": "哎呀… 看来马来西亚的历史一点都没进脑袋。别担心，每个高手都是从零开始的！"
+  },
+  {
+    "score": 0,
+    "lang": "tm",
+    "title": "பூஜ்ய நாயகன்",
+    "text": "அய்யோ… மலேசியாவின் வரலாறு இன்னும் உங்களிடம் வரவில்லை போல. கவலைப்பட வேண்டாம், ஒவ்வொருவரும் பூஜ்யத்திலிருந்து துவங்குகிறார்கள்!"
   },
   {
     "score": 1,
     "lang": "my",
-    "title": "Memalukan Negara",
-    "text": "Tidur masa kelas sejarah ke? Jawapan ni terlalu teruk, sampai rasa macam tak sayang negara. Cuba lagi, atau pindah je la."
+    "title": "Baru Pemanas Badan",
+    "text": "Ada usaha, tapi macam jawab sambil mengantuk. Cuba lagi, mungkin kali ni kopi boleh tolong!"
   },
   {
     "score": 1,
     "lang": "en",
-    "title": "National Embarrassment",
-    "text": "Did you sleep through history class? This answer is so bad, it’s practically unpatriotic. Try again, or consider relocating."
+    "title": "Warming Up",
+    "text": "Nice try, but it feels like you were half asleep answering. Try again—maybe some coffee will help!"
+  },
+  {
+    "score": 1,
+    "lang": "cn",
+    "title": "刚热身",
+    "text": "有点努力，但感觉你答题时在打瞌睡。再来一次吧，也许喝杯咖啡会有帮助！"
+  },
+  {
+    "score": 1,
+    "lang": "tm",
+    "title": "சூடு பிடிக்கும் நேரம்",
+    "text": "சிறிது முயற்சி செய்தீர்கள், ஆனாலும் பதில்கள் தூக்கத்தில் சொன்ன மாதிரி. மீண்டும் முயற்சிக்கவும்—ஒரு காபி உதவும்!"
   },
   {
     "score": 2,
     "lang": "my",
-    "title": "Patriot Setengah Masak",
-    "text": "Kau macam tahu, tapi tak tahu sangat. Macam kibarkan bendera dengan malas—sedih je tengok. Kaji balik sejarah kau, kawan."
+    "title": "Separuh Jalan",
+    "text": "Separuh betul, separuh melayang. Dah nampak jalan, cuma jangan salah masuk simpang."
   },
   {
     "score": 2,
     "lang": "en",
-    "title": "Half-Baked Patriot",
-    "text": "You’re kind of there, but mostly not. It’s like waving a flag with no enthusiasm—just sad. Brush up on your history, champ."
+    "title": "Halfway There",
+    "text": "Half your answers hit the mark, half went missing. You’re on the road, just don’t take the wrong turn!"
+  },
+  {
+    "score": 2,
+    "lang": "cn",
+    "title": "一半对一半错",
+    "text": "一半答对，一半飞走。已经看到方向了，只是别走错路口哦。"
+  },
+  {
+    "score": 2,
+    "lang": "tm",
+    "title": "அரை வழி",
+    "text": "பாதி சரி, பாதி தவறு. பாதை கிட்டத்தட்ட சரிதான், ஆனால் தவறான சாலையில் போகாதீர்கள்!"
   },
   {
     "score": 3,
     "lang": "my",
-    "title": "Rakyat Malaysia Biasa-Biasa",
-    "text": "Kau tahu cukup untuk tak memalukan diri sepenuhnya, tapi jujurnya—kau takkan menang anugerah 'Patriot Sejati' dengan jawapan ni."
+    "title": "Boleh Tahan",
+    "text": "Tak memalukan, tapi tak hebat sangat juga. Macam makan nasi lemak tapi lupa sambal."
   },
   {
     "score": 3,
     "lang": "en",
-    "title": "Mediocre Malaysian",
-    "text": "You know just enough to not be completely embarrassing, but let’s be honest—you’re not winning any 'True Patriot' awards with this."
+    "title": "Not Bad",
+    "text": "You didn’t embarrass yourself, but it’s not amazing either. Like eating nasi lemak without the sambal."
+  },
+  {
+    "score": 3,
+    "lang": "cn",
+    "title": "还可以",
+    "text": "不算丢脸，但也没多厉害。就像吃椰浆饭却忘了加参巴辣椒酱。"
+  },
+  {
+    "score": 3,
+    "lang": "tm",
+    "title": "பரவாயில்லை",
+    "text": "வெட்கப்பட வேண்டியதில்லை, ஆனால் அற்புதமுமில்லை. நாசி லேமக் சாப்பிட்டு சம்பல் மறந்த மாதிரி."
   },
   {
     "score": 4,
     "lang": "my",
-    "title": "Hampir Anak Malaysia",
-    "text": "Kau hampir jadi juara, tapi belum cukup lagi. Semangat ada, tapi nampak macam kau baca sinopsis sejarah je. Lain kali, fokus betul-betul!"
+    "title": "Hampir Power",
+    "text": "Hampir jadi juara! Tapi ada juga jawapan yang macam tergelincir sikit. Fokus sikit lagi, confirm mantap!"
   },
   {
     "score": 4,
     "lang": "en",
-    "title": "Almost Anak Malaysia",
-    "text": "You’re close, but not close enough. You’ve got the spirit, but it seems like you skimmed the textbook. Go all in next time!"
+    "title": "Almost Awesome",
+    "text": "You’re nearly a champ! A few answers slipped, but with a bit more focus you’ll nail it."
+  },
+  {
+    "score": 4,
+    "lang": "cn",
+    "title": "差一点完美",
+    "text": "快要变成冠军了！只是有几个答案滑了一下。再专心一点就完美了。"
+  },
+  {
+    "score": 4,
+    "lang": "tm",
+    "title": "கிட்டத்தட்ட சூப்பர்",
+    "text": "நீங்கள் கிட்டத்தட்ட சாம்பியன்! சில பதில்கள் வழுக்கி விட்டது, ஆனால் கொஞ்சம் கவனம் செலுத்தினால் முழுமையாக வெற்றி பெறுவீர்கள்."
   },
   {
     "score": 5,
     "lang": "my",
-    "title": "Merdeka Mastermind",
-    "text": "Wah, nampaknya kau ensiklopedia berjalan tentang Malaysia! Macam kau ada kat sana masa 1957 dulu. Jangan terlalu bangga sangat pulak."
+    "title": "Legenda Merdeka",
+    "text": "Padu! Macam ensiklopedia berjalan. Jangan terkejut kalau orang lain mula panggil anda cikgu sejarah."
   },
   {
     "score": 5,
     "lang": "en",
-    "title": "Merdeka Mastermind",
-    "text": "Well, well, well, look who’s a walking encyclopedia of Malaysia! It’s almost like you were there in 1957. Don’t let it go to your head."
+    "title": "Independence Legend",
+    "text": "Boom! You’re like a walking encyclopedia. Don’t be surprised if people start calling you a history teacher."
+  },
+  {
+    "score": 5,
+    "lang": "cn",
+    "title": "独立传奇",
+    "text": "太强了！你就像一本会走路的百科全书。别惊讶要是大家开始叫你历史老师。"
+  },
+  {
+    "score": 5,
+    "lang": "tm",
+    "title": "சுதந்திரம் லெஜண்ட்",
+    "text": "அருமை! நீங்கள் நடக்கும் கலைக்களஞ்சியம் போல. உங்களை மக்கள் வரலாறு ஆசிரியர் என்று அழைக்கத் தொடங்கினால் அதிர்ச்சியடைய வேண்டாம்."
   }
 ]

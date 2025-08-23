@@ -10,18 +10,24 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class LanguageBoxComponent {
   @Output() prefLang = new EventEmitter<string>();
 
-  greeetingText = [
-    { id: 1, text: 'Champions! Pilih bahasa anda' },
-    { id: 2, text: 'Champions! Choose your language' }
+
+  greetingText = [
+    { id: 1, lang: 'my', text: 'Champions! Pilih bahasa anda' },
+    { id: 2, lang: 'en', text: 'Champions! Choose your language' },
+    { id: 3, lang: 'cn', text: '冠军们！请选择你的语言' },
+    { id: 4, lang: 'tm', text: 'சாம்பியன்ஸ்! உங்கள் மொழியைத் தேர்ந்தெடுக்கவும்' }
   ];
 
   languages = [
     { code: 'my', label: 'Bahasa Malaysia' },
-    { code: 'en', label: 'English' }
+    { code: 'en', label: 'English' },
+    { code: 'cn', label: '中文 (Chinese)' },
+    { code: 'tm', label: 'தமிழ் (Tamil)' }
   ];
 
+
   languageOption: number = 1;
-  contentText: string = this.greeetingText[0].text;
+  contentText: string = this.greetingText[0].text;
   blurred: boolean = false;
 
 
@@ -35,9 +41,9 @@ export class LanguageBoxComponent {
 
   switchTextContentByInterval() {
     if (this.blurred) {
-      const lang = this.greeetingText.find(l => l.id === this.languageOption);
-      this.contentText = lang ? lang.text : this.greeetingText[0].text;
-      this.languageOption = this.languageOption % this.greeetingText.length + 1;
+      const lang = this.greetingText.find(l => l.id === this.languageOption);
+      this.contentText = lang ? lang.text : this.greetingText[0].text;
+      this.languageOption = this.languageOption % this.greetingText.length + 1;
     }
 
     this.blurred = !this.blurred;
