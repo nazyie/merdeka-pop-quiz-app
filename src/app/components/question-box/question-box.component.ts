@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { style } from '@angular/animations';
 import { Question } from '../../model/Question';
 
 @Component({
@@ -10,61 +9,56 @@ import { Question } from '../../model/Question';
   styleUrl: './question-box.component.scss'
 })
 export class QuestionBoxComponent implements OnInit {
-  @Input() no!: number;
-  @Input()totalQuestion!: number;
-  @Input() question!: Question | null;
+  @Input() question!: Question;
+  @Input() questionMetadata!: { questionNo: number, totalQuestion: number };
 
-  @Output() resultEmitter = new EventEmitter<number>();
+  @Output() resultEmitter = new EventEmitter<string>();
 
-  iconStyle!: string[];
+  btnColors: string[] = [
+    'is-primary',
+    'is-success',
+    'is-warning',
+    'is-error'
+  ];
+
+  iconStyle: string[] = [
+    "nes-mario",
+    "nes-ash",
+    "nes-pokeball",
+    "nes-bulbasaur",
+    "nes-charmander",
+    "nes-squirtle",
+    "nes-kirby"
+  ];
+
   selectedIconStyle!: string;
   answer!: string;
 
   ngOnInit() {
-    this.no = 0;
-    this.totalQuestion = 0;
-    this.answer = "";
-    this.question = null;
-    this.iconStyle = [
-      "nes-mario",
-      "nes-ash",
-      "nes-pokeball",
-      "nes-bulbasaur",
-      "nes-charmander",
-      "nes-squirtle",
-      "nes-kirby"
-    ];
-    this.selectedIconStyle = "";
-
     this.randomizingIconStyle();
   }
 
   confirmAnswer() {
-    let result = 0;
-    if (this.answer === this.question?.answer) {
-      result = 1;
-    }
-
-    this.randomizingIconStyle();
-    this.clearAnswer();
-    this.resultEmitter.emit(result);
+    this.resultEmitter.emit(this.answer);
+    this.resetValue();
   }
 
-  randomizingIconStyle() {
-    this.selectedIconStyle = this.getRandomElement(this.iconStyle);
-  }
 
   chooseAnswer(answer: string) {
     this.answer = answer;
   }
 
-  clearAnswer() {
+  private resetValue() {
     this.answer = "";
   }
 
-  getRandomElement<T>(array: T[]): T {
+  private getRandomElement<T>(array: T[]): T {
     const randomIndex = Math.floor(Math.random() * array.length);
     return array[randomIndex];
+  }
+
+  private randomizingIconStyle() {
+    this.selectedIconStyle = this.getRandomElement(this.iconStyle);
   }
 
 }

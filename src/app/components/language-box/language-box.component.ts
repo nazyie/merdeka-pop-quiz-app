@@ -8,7 +8,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './language-box.component.scss'
 })
 export class LanguageBoxComponent {
-  @Output() pageEventEmitter = new EventEmitter<string>();
+  @Output() prefLang = new EventEmitter<string>();
 
   greeetingText = [
     { id: 1, text: 'Champions! Pilih bahasa anda' },
@@ -44,6 +44,6 @@ export class LanguageBoxComponent {
   }
 
   chooseLanguage(lang: string) {
-    this.pageEventEmitter.emit(lang);
+    this.prefLang.emit(lang);
   }
 }

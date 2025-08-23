@@ -12,22 +12,25 @@ export class JudgingMessageService {
 
   constructor() {
     this.loadJson();
-   }
+  }
 
-  judgingScore(totalScore: { correct: number, incorrect: number }): { score: number, judgingMessage: number } {
+  judgementResultByScore(totalScore: { correct: number, incorrect: number }, prefLang: string): { score: number, judgingMessage: Judging | undefined } {
     const { correct, incorrect } = totalScore;
     const totalQuestion = correct + incorrect;
 
     const scorePoint = Math.floor((correct / totalQuestion) * 5);
+    const judgingResult = this.judgementText.find((item) => {
+      return item.score === scorePoint && item.lang === prefLang
+    });
 
     return {
       score: scorePoint,
-      judgingMessage: scorePoint
+      judgingMessage: judgingResult
     }
   }
 
   loadJson() {
-    return this.http.get<Judging[]>('assets/judging.json').subscribe({
+    this.http.get<Judging[]>('assets/judging.json').subscribe({
       next: (res) => {
         this.judgementText = res;
       }

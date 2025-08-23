@@ -1,21 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LanguageBoxComponent } from "./components/language-box/language-box.component";
-import { Question } from './model/Question';
-import { myQuiz } from './question/my';
+import { Question, QuestionList } from './model/Question';
 import { JudgingBoxComponent } from "./components/judging-box/judging-box.component";
-import { enQuiz } from './question/en';
-import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { AppModule } from './app.module';
 import { QuestionBoxComponent } from './components/question-box/question-box.component';
 import { FooterComponent } from "./components/footer/footer.component";
 import { HeaderComponent } from "./components/header/header.component";
+import { QuestionService } from './service/question.service';
+import { JudgingMessageService } from './service/judging-message.service';
 
-export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
-  return new TranslateHttpLoader(http);
-}
+export const MAX_QUESTION = 2;
 
 @Component({
   selector: 'app-root',
@@ -24,59 +20,44 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  myQuestion : Question [] = myQuiz;
-  enQuestion : Question [] = enQuiz;
+export class AppComponent implements OnInit{
+  private questionService = inject(QuestionService);
+  private translateService = inject(TranslateService);
+  private judingMessage = inject(JudgingMessageService); // eager loading the component
 
-  questions : Question [] = this.myQuestion;
+  questionList : Question[] = [];
+  prefLang: string = "";
+  currentQuestion: number = 1;
+  maximumQuestion: number = MAX_QUESTION;
 
-  score: number;
-  totalQuestion: number;
-  wrongScore: number;
-  pageNumber : number;
-  lang: string;
 
-  constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('en');
-    this.totalQuestion = this.questions.length;
-    this.wrongScore = 0;
-    this.pageNumber = 0;
-    this.score = 0;
-    this.lang = "";
+  ngOnInit(): void {
+    this.translateService.setDefaultLang('en');
   }
 
   restartProgress() {
-    this.totalQuestion = this.questions.length;
-    this.wrongScore = 0;
-    this.pageNumber = 0;
-    this.score = 0;
-    this.lang = "";
   }
 
-  handleEventPageNumber(pageNumber: number) {
-    this.pageNumber += pageNumber;
+  handleQuestionAnswerSelection(answer: string) {
+    this.questionService.answerQuestion(this.questionList[this.currentQuestion - 1], answer)
+    ++this.currentQuestion;
   }
 
-  handleEventScore(score: number) {
-    if (score == 1)
-      this.score += 1;
-
-    if (score == 0)
-      this.wrongScore += 1;
-
-    this.handleEventPageNumber(1);
+  handlePreferedLanguageSelection(lang: string) {
+    this.prefLang = lang;
+    this.translateService.setDefaultLang(lang);
+    this.loadQuestion();
   }
 
-  handleEventChooseLang(event : string) {
-    ++this.pageNumber;
-    this.lang = event;
-    this.translate.use(this.lang);
+  get getQuestionMetadata() {
+    return {
+      questionNo: this.currentQuestion,
+      totalQuestion: this.maximumQuestion
+    }
+  }
 
-    if (this.lang === 'my')
-      this.questions = this.myQuestion;
-
-    if (this.lang === 'en')
-      this.questions = this.enQuestion;
+  private loadQuestion() {
+    this.questionList = this.questionService.loadQuestion(this.maximumQuestion, this.prefLang);
   }
 
 }

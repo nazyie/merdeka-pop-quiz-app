@@ -1,19 +1,18 @@
 <div>
   <div class="nes-container with-title is-centered">
-    <p class="title">{{ 'finish' | translate }}</p>
-    <p class="text-center">{{ 'youAre' | translate }}<strong>{{ judgeTitle }}</strong></p>
+    <p class="title">{{ 'congrat-message' | translate }}</p>
+    <p class="text-center">{{ 'youre-message' | translate }}<strong>{{ judging?.title }}</strong></p>
     <section class="icon-list flex justify-center pt-4 pb-6">
-      @for (i of heartCount; track $index) {
-        <i class="nes-icon star"></i>
+
+      @for (star of [].constructor(star); track $index) {
+      <i class="nes-icon star"></i>
       }
-      @if (hasHalfHeart) {
-        <i class="nes-icon star is-half"></i>
-      }
-      @for (i of emptyHeartCount; track $index) {
-        <i class="nes-icon star is-empty"></i>
+
+
+      @for (star of [].constructor(emptyStar); track $index) {
+      <i class="nes-icon star is-empty"></i>
       }
     </section>
-    <p class="nes-text is-primary"><i>{{ judgeText }}</i></p>
+    <p class="nes-text is-primary"><i>{{ judging?.text }}</i></p>
   </div>
 </div>
-

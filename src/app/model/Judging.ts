@@ -1,8 +1,6 @@
 export interface Judging {
+  score: number,
   lang: string,
-  metadata: {
-    title: string,
-    message: string,
-    score: string,
-  }
+  title: string,
+  text: string
 };
