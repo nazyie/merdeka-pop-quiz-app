@@ -33,7 +33,7 @@ export class AppComponent implements OnInit{
 
   metadata = {
     title: "Reset your progress",
-    text: "Are you sure to reset your progress ?",
+    text: "Are you sure want to reset your progress ?",
     confirmMessage: "Confirm",
     cancelMessage: "Cancel"
   }
